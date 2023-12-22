@@ -1,0 +1,55 @@
+.body {
+   background-color: darkgreen;
+}
+
+.bggreen {
+   background-color: green;
+}
+
+.border {
+   /* border: 2px solid black; */
+   /* border: 2px solid black; */
+   border-width: 50PX;
+}
+
+
+.images {
+   position: relative;
+   display: flex;
+   gap: 10px;
+   flex-wrap: wrap;
+   align-content: stretch;
+   justify-content: space-evenly;
+}
+
+.item {
+   font-size: 30px;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #fff;
+   transition: 0.25;
+   transform: rotateY(180deg);
+
+}
+
+.item.boxOpen {
+   transform: rotateY(0deg);
+   
+}
+
+.item::after {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background-color: #025202;
+   transition: 0.25;
+   transform: rotate(0deg);
+   backface-visibility: hidden;
+}
+
+.boxOpen::after,
+.boxMatch::after {
+   transform: rotateY(180deg);
+}
