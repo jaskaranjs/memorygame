@@ -19,7 +19,7 @@
       <div class="row  images m-auto" id="games" style="height: 500px ; width: 500px; justify-content:center; "></div>
 
       <div class="mt-5">
-        <button>Reset Game</button>
+        <button class="resetgame">Reset Game</button>
       </div>
 
     </div>
@@ -75,7 +75,16 @@
     }
   })
 
-
+document.querySelectorAll(".resetgame")[0].onclick = function () {
+            var boxOpen = document.querySelectorAll(".boxOpen");
+            for(i=0; i< boxOpen.length; i++){
+              boxOpen[i].classList.remove("boxOpen");
+            }
+            var boxMatch = document.querySelectorAll(".boxMatch");
+            for(i=0; i< boxMatch.length; i++){
+              boxMatch[i].classList.remove("boxMatch");
+            }
+}
 
 
 </script>
