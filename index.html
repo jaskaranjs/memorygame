@@ -12,14 +12,14 @@
 
 <body class="body">
   <div class="container">
-    <div class=" row  text-center bggreen">
-      <h1>Memory game</h1>
+    <div class=" row  text-center bggreen my-4">
+      <h1 style="color: red ;" class="my-1">Memory Game</h1>
 
 
-      <div class="row  images m-auto" id="games" style="height: 500px ; width: 500px; justify-content:center; "></div>
+      <div class="row  images m-auto" id="games" style=" justify-content:center; "></div>
 
       <div class="mt-5">
-        <button class="resetgame">Reset Game</button>
+        <button class="resetgame reset my-4">Reset Game</button>
       </div>
 
     </div>
@@ -39,7 +39,7 @@
   sortemojis.map((emoitem) => {
     let creatediv = document.createElement("div");
 
-    creatediv.setAttribute("class", "col-md-3 border item ");
+    creatediv.setAttribute("class", "col-sm-3 border item ");
 
     creatediv.innerHTML = emoitem;
     gamediv.appendChild(creatediv)

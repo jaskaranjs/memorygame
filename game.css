@@ -1,9 +1,10 @@
 .body {
-   background-color: darkgreen;
+
+   background-color: #fff;
 }
 
 .bggreen {
-   background-color: green;
+   background-color:black ;
 }
 
 .border {
@@ -43,7 +44,7 @@
    content: "";
    position: absolute;
    inset: 0;
-   background-color: #025202;
+   background-color: black;
    transition: 0.25;
    transform: rotate(0deg);
    backface-visibility: hidden;
@@ -52,4 +53,14 @@
 .boxOpen::after,
 .boxMatch::after {
    transform: rotateY(180deg);
+}
+.reset{   border: 2px solid black;
+   border-radius: 10px;
+   background-color: #fff;
+font-size: larger;
+}
+.reset:hover{
+   border-radius: 10px;
+   background-color: red;
+   border: 2px solid red;
 }
